@@ -1,0 +1,383 @@
+<html>
+
+	<head>
+
+		<title>The Washington Post</title>
+		
+		<style type="text/css">
+		
+			#topbar{
+				background-color:#000000;
+				width:100%;
+				margin:0 auto;
+				height:60px;
+			}
+			body{
+				margin:0;
+				padding:0;
+				font-family:Franklin,Arial,Helvetica,sans-serif;
+			}
+			#search-bar{
+				margin:10px;
+				height:40px;
+				width:255px;
+				padding:14px;
+				border-radius:5px;
+				outline: none;
+				float:left;
+			}
+			#sections{
+				height:36px;
+				width:120px;
+				margin:10px 10px 10px 0;
+				background-color:#2A2A2A;
+				border:1px #666666 solid;
+				float:left;
+				border-radius: 4px;
+			}
+			#sections p{
+				color:white;
+				font-weight:bold;
+				font-size:95%;
+				position:relative;
+				top:-6px;
+				left:15px;
+			}
+			#sections img{
+				position:relative;
+				left:80px;
+				top:-40px;
+			}
+			#gen-text a{
+				float:left;
+				text-decoration:none;
+				color:white;
+				font-weight:bold;
+				font-size:84%;
+				padding:23px 7px 20px 20px;
+			}
+			#gen-text a:hover{
+				text-decoration:underline;
+			}
+			#get-one-yr{
+				height:39px;
+				width:190px;
+				margin:10px 10px 10px 38px;
+				background-color:#1955A5;
+				float:left;
+				border-radius: 4px;
+			}
+			#get-one-yr p{
+				color:white;
+				font-weight:bold;
+				font-size:97%;
+				position:relative;
+				top:-6px;
+				left:18px;
+			}
+			#sign-in{
+				height:36px;
+				width:105px;
+				margin:10px 10px 10px 0;
+				background-color:#2A2A2A;
+				border:1px #666666 solid;
+				float:left;
+				border-radius: 4px;
+			}
+			#sign-in p{
+				color:white;
+				font-weight:bold;
+				font-size:96%;
+				position:relative;
+				top:-6px;
+				left:15px;
+			}
+			#sign-in img{
+				position:relative;
+				top:-42px;
+				left:71px;
+			}
+			.clear{
+				clear:both;
+			}
+			#logo-area{
+				width:100%;
+				margin:0 auto;
+				height:323px;
+			}
+			#logo-align{
+				height:77px;
+				position:relative;
+				left:400px;
+				top:32px;
+				float:left;
+			}
+			#tag-line{
+				position:relative;
+				left:-30px;
+				top:50px;
+				height:38px;
+				}
+			#left-hr{
+				width:520px;
+				height:48px;
+				float:left;
+				border-bottom: 1px solid #E9E9E9;
+			}
+			#right-hr{
+				width:530px;
+				height:48px;
+				float:right;
+				border-bottom: 1px solid #E9E9E9;
+			}
+			#tagline-font{
+				color:#666666;
+				font-weight:normal;
+				font-size:20px;
+				font-family:georgia,Times New Roman,serif;
+				font-style:italic;
+				position:relative;
+				top:30px;
+				left:-28px;
+				float:right;
+			}
+			#intro-img{
+				margin-top:32px;
+				margin-left:150px;
+				float:left;
+			}
+			#intro-txt {
+				height:50px;
+				width:930px;
+				font-family:Postoni,garamond,serif;
+			    font-size:23px;
+				font-weight:bold;
+				margin-left:316px;
+				margin-top:40px;
+			}
+			#intro-txt a{
+				text-decoration:none;
+				color:#2A2A2A;
+			}
+			#intro-txt a:hover{
+				color:#1955A5;
+			}
+			#intro-txt-tag {
+				height:25px;
+				width:600px;
+				margin-left:316px;
+				margin-top:-10px;
+				font-weight:normal;
+				font-size:15px;
+			}
+			#intro-txt-tag a{
+				text-decoration:none;
+				color:#666666;
+			}
+			#intro-txt-tag a:hover{
+				color:#1955A5;
+			}
+			#end-hr{
+				border-bottom:1px solid #E9E9E9;
+				width:83%;
+				margin-left:115px;
+				margin-top:34px;
+			}
+			#content-section{
+				width:100%;
+				margin:0 auto;
+				height:227px;
+			}
+			#left-section{
+				width:265px;
+				height:300px;
+				margin-left:115px;
+				background-color:;
+				border-right:1px solid #E9E9E9;
+			}
+			#topic{
+				font-weight:bold;
+				font-size:13px;
+				margin-top:20px;
+			}
+			#topic a{
+				text-decoration:none;
+				color:#111127;
+			}
+			#topic a:hover{
+				color:#1955A5;
+			}
+			#topic-headline{
+				font-family:Postoni,garamond,serif;
+				font-weight:bold;
+				font-size:35px;
+				position:relative;
+				top:-34px;
+			}
+			#topic-headline a{
+				text-decoration:none;
+				color:#2A2A2A;
+			}
+			#topic-headline a:hover{
+				color:#1955A5;
+			}
+			#middle-section{
+				width:558px;
+				height:300px;
+				background-color:;
+				position:relative;
+				left:395px;
+				top:-300px;
+				border-right:1px solid #E9E9E9;
+			}
+			#right-section{
+				width:271px;
+				height:300px;
+				position:relative;
+				left:965px;
+				top:-600px;
+			}
+			#rs-img{
+				width:270px;
+			}
+			#list-news{
+				font-family:Postoni,garamond,serif;
+				font-weight:bold;
+				font-size:23px;
+				position:relative;
+				top:-12px;
+			}
+			#list-news a{
+				text-decoration:none;
+				color:#111127;
+			}
+			#list-news a:hover{
+				color:#1955A5;
+			}
+			
+		</style>
+
+	</head>
+
+	<body>
+	
+		<div id="topbar">
+		
+			<input id="search-bar" type="text" placeholder="Search">
+		
+			<div id="sections">
+			
+				<p>Sections</p>
+				<img src="wp1.jpg">
+			
+			</div>
+			
+			<div id="gen-text">
+				
+				<a href="">Politics</a>
+			
+			</div>
+			
+			<div id="gen-text">
+				
+				<a href="">Opinions</a>
+			
+			</div>
+			
+			<div id="gen-text">
+				
+				<a href="">Coronavirus</a>
+			
+			</div>
+			
+			<div id="gen-text">
+				
+				<a href="">Race & Reckoning</a>
+			
+			</div>
+			
+			<div id="gen-text">
+				
+				<a href="">Tech</a>
+			
+			</div>
+			
+			<div id="gen-text">
+				
+				<a href="">Investigations</a>
+			
+			</div>
+			
+			<div id="get-one-yr">
+				
+				<p>Get One year for 500</p>
+			
+			</div>
+			
+			<div id="sign-in">
+				
+				<p>Sign-in</p>
+				<img src="wp2.jpg">
+			
+			</div>
+		
+		</div>
+		
+		<div class="clear"></div>
+		
+		<div id="logo-area">
+			
+			<a href=""><img id="logo-align" src="wp3.jpg"></a>
+			
+			<div class="clear"></div>
+			
+			<p id="left-hr"></p>
+			
+			<p id="right-hr"></p>
+			
+			<p id="tagline-font">Democracy Dies in Darkness</p>
+			
+			<div class="clear"></div>
+			
+			<img id="intro-img" src="wp4.jpg">
+			
+			<p id="intro-txt"><a href="">7 things to know today: Debt ceiling standoff, Facebook whistleblower’s testimony, heat wave,
+			expanded loan forgiveness and more</a></p>
+			
+			<p id="intro-txt-tag"><a href="">Get caught up in three minutes with these stories in our daily briefing, “The 7.”</a></p>
+			
+			<p id="end-hr"></p>
+
+		</div>
+		
+		<div id="content-section">
+		
+			<div id="left-section">
+			
+				<p id="topic"><a href="">Analysis</a></p>
+				
+				<p id="topic-headline"><a href="">A message from the unemployed: They’ll work when they 
+				feel safe, well paid</a></p>
+			
+			</div>
+			
+			<div id="middle-section">
+			
+				<a href=""><img src="wp5.jpg"></a>
+			
+			</div>
+			
+			<div id="right-section">
+			
+				<a href=""><img id="rs-img" src="wp6.jpg"></a>
+				
+				<p id="list-news"><a href="">She had canceled her phone plan and was ready to die. 
+				Now a surprise decision has halted her euthanasia bid.</a></p>
+			
+			</div>
+		
+		</div>
+		
+	</body>
+
+</html>
